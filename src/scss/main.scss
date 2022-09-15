@@ -1,0 +1,15 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/scrollProgressBar";
+@import "./components/header";
+@import "./components/main";
+@import "./components/technologie";
+@import "./components/developers";
+@import "./components/message";
+@import "./components/enjoyLife";
+@import "./components/footer";

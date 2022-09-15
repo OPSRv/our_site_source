@@ -1,0 +1,66 @@
+.message {
+  margin-bottom: 157px;
+
+  display: grid;
+  justify-content: center;
+  place-items: center;
+}
+.message_text {
+  text-align: center;
+
+  h3 {
+    font-family: "Aeonik-bold";
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  h5 {
+    font-family: "Aeonik-Regular";
+    font-size: 22px;
+    color: #e5e5e5;
+    margin-bottom: 72px;
+    margin-top: 20px;
+  }
+}
+.message_block {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 27px 33px;
+  grid-auto-rows: 152px;
+  justify-content: center;
+  width: 100%;
+}
+.message_block__item {
+  background: #1a1919;
+  border-radius: 5px;
+  padding: 19px;
+  display: grid;
+  align-content: space-between;
+
+  p {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: "Aeonik-light";
+    font-size: 14px;
+  }
+  h5 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr 4fr);
+    justify-items: start;
+    align-items: center;
+    justify-content: start;
+    align-self: end;
+    width: 100%;
+    white-space: nowrap;
+    &:before {
+      content: url("../img/users/1.png");
+      padding-right: 5px;
+    }
+  }
+}
+
+// @for $i from 1 through 6 {
+//   .item-#{$i} {
+//     background-image: url("../img/developers/#{$i}.png");
+//   }
+// }

@@ -1,0 +1,54 @@
+.enjoyLife {
+  hr {
+    width: 100%;
+    opacity: 0.3;
+    margin-top: 51px;
+    margin-bottom: 51px;
+  }
+}
+.enjoyLife__image {
+  height: 480px;
+  width: 100%;
+  background-image: url("../img/photo/enjoyLife.png");
+  border-radius: 10px;
+  display: grid;
+  justify-content: start;
+  align-content: center;
+  padding-left: 77px;
+  margin-bottom: 156px;
+  h3 {
+    font-family: "Aeonik-Bold";
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  h5 {
+    font-family: "Aeonik-Light";
+    font-size: 22px;
+  }
+}
+.enjoyLife_blue {
+  display: grid;
+  place-items: center;
+  background: $primary-color;
+  border-radius: 10px;
+  min-height: 291px;
+  padding: 48px;
+  justify-content: center;
+  align-content: center;
+
+  h3 {
+    font-family: "Aeonik-Bold";
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 40px;
+  }
+  h5 {
+    font-family: "Aeonik-Light";
+    font-size: 22px;
+  }
+  button {
+    @include buttone(#1a1919, none, $light-color);
+  }
+}

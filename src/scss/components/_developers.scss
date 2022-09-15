@@ -1,0 +1,85 @@
+.developers {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  button {
+    margin-top: 81px;
+    @include buttone($primary-color, none, $light-color);
+    justify-self: center;
+  }
+  hr {
+    width: 100%;
+    opacity: 0.3;
+    margin-top: 90px;
+  }
+}
+.developers_text {
+  margin-bottom: 81px;
+  justify-items: start;
+  h3 {
+    font-family: "Aeonik-bold";
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  h5 {
+    font-family: "Aeonik-Regular";
+    font-size: 22px;
+    color: #e5e5e5;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+.developers_images {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-template-rows: repeat(auto, 304px);
+  justify-content: start;
+  width: 100%;
+  @include mobile {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+.developers_images__item {
+  height: 304px;
+  border-radius: 5px;
+  display: grid;
+  align-self: center;
+  .text {
+    align-self: end;
+    background: rgba(9, 7, 7, 0.4);
+    backdrop-filter: blur(25px);
+    border-radius: 0px 0px 5px 5px;
+    height: 75px;
+    display: grid;
+    align-items: center;
+    padding: 9px 15px 0 20px;
+    .text_wrapper {
+      h5 {
+        font-family: "Aeonik-Regular";
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      h6 {
+        font-size: 14px;
+        font-family: "Aeonik-Light";
+        margin-bottom: 0;
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        object {
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+@for $i from 1 through 6 {
+  .item-#{$i} {
+    @include image-set("../img/developers/#{$i}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+}

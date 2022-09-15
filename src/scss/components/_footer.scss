@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 59px;
+}
+.sprite {
+  display: grid;
+  width: 197px;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  object {
+    transition: transform 0.3 linear;
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
